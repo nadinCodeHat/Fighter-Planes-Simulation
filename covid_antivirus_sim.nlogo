@@ -118,13 +118,13 @@ to go
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-329
-12
-806
-490
+368
+10
+886
+529
 -1
 -1
-14.212121212121213
+15.455
 1
 10
 1
@@ -145,10 +145,10 @@ ticks
 30.0
 
 INPUTBOX
-86
-59
-188
-119
+35
+96
+137
+156
 number-of-houses
 20.0
 1
@@ -156,10 +156,10 @@ number-of-houses
 Number
 
 BUTTON
-83
-164
-146
-197
+165
+173
+228
+206
 setup
 setup
 NIL
@@ -173,10 +173,10 @@ NIL
 1
 
 INPUTBOX
-83
-220
-179
-280
+126
+25
+214
+85
 antivirus
 3.0
 1
@@ -184,27 +184,10 @@ antivirus
 Number
 
 BUTTON
-152
-165
-215
-198
-move
-move
-NIL
-1
-T
-OBSERVER
-NIL
-NIL
-NIL
-NIL
-1
-
-BUTTON
-225
-164
-288
-197
+243
+173
+306
+206
 go
 go
 T
@@ -218,10 +201,10 @@ NIL
 1
 
 INPUTBOX
-220
-221
-306
-281
+35
+24
+121
+84
 infected
 20.0
 1
@@ -229,15 +212,69 @@ infected
 Number
 
 INPUTBOX
-83
-292
-193
-352
+219
+25
+306
+85
 normal
 10.0
 1
 0
 Number
+
+MONITOR
+64
+278
+135
+323
+NIL
+%infected
+1
+1
+11
+
+MONITOR
+144
+278
+211
+323
+NIL
+%immune
+1
+1
+11
+
+MONITOR
+222
+277
+285
+322
+NIL
+%normal
+1
+1
+11
+
+PLOT
+36
+333
+305
+483
+Populations
+weeks
+people
+0.0
+52.0
+0.0
+200.0
+true
+true
+"" ""
+PENS
+"infected" 1.0 0 -2674135 true "" "plot count turtles with [ infected? ]"
+"immune" 1.0 0 -7500403 true "" "plot count turtles with [ immune? ]"
+"healthy" 1.0 0 -10899396 true "" "plot count turtles with [ not infected? and not immune? ]"
+"total" 1.0 0 -13345367 true "" "plot count turtles"
 
 @#$#@#$#@
 ## WHAT IS IT?
