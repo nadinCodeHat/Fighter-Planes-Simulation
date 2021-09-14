@@ -1,3 +1,18 @@
+turtles-own
+  [ infected?                ;; if true, the turtle is infectious
+    remaining-immunity   ;; how many weeks of immunity the turtle has left
+    infected-time            ;; how long, in weeks, the turtle has been infectious
+    age ]                ;; how many weeks old the turtle is
+
+globals
+  [ %infected            ;; what % of the population is infectious
+    %immune              ;; what % of the population is immune
+    %normal
+    lifespan             ;; the lifespan of a turtle
+    chance-reproduce     ;; the probability of a turtle generating an offspring each tick
+    carrying-capacity    ;; the number of turtles that can be in the world at one time
+    immunity-duration ]  ;; how many weeks immunity lasts
+
 breed [houses house]
 breed [visitors visitor]
 
@@ -12,20 +27,16 @@ visitors-own
 
 to setup
   ca
-
   ask patches [set pcolor 72]
-
   create-home
   layout
   create-infected
   create-antivirus
   create-normal
   reset-ticks
-
 end
 
 to create-home
-
   create-houses number-of-houses
   [
     set color 96
@@ -36,8 +47,6 @@ to create-home
   ask houses [
     create-link-with one-of other houses
   ]
-
-
 end
 
 to layout
@@ -118,9 +127,9 @@ to go
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-368
+325
 10
-886
+843
 529
 -1
 -1
