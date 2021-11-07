@@ -607,44 +607,6 @@ LeaveTrack?
 -1000
 
 @#$#@#$#@
-## WHAT IS IT?
-
-TankLogo aims for training the users' basic NetLogo programming techniques. It simulates a battle field with multiple tanks combating each other.
-
-## HOW IT WORKS
-
-The model pre-defines the basic behavior of the agents. The users have to define the specific behavior of their own tanks so that the tanks can think and behave automatically without human intervensions. The goal, of course, is to WIN!
-
-## HOW TO USE IT
-
-The users define the procedures like "tank-prepare-red, tank-prepare-blue" which prepare the parameters determining the tanks' behavior in each turn (tick).
-
-## THINGS TO NOTICE
-
-The users should not change the codes about the agents' basic behavior.
-
-Collosions between the tanks or tanks and walls inflict damage.
-
-## THINGS TO TRY
-
-"FirePower" slide sets the fire power of a tank's gun. More fire power means a bullet can inflict more damage but with less velocity. Moreover, a more powful gun needs more time to cool down. When a gun is hot, it cannot fire.
-
-## EXTENDING THE MODEL
-
-(suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
-
-## NETLOGO FEATURES
-
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
-
-## RELATED MODELS
-
-TankLogo is inspired by Robocode (https://robocode.sourceforge.io/)
-
-## CREDITS AND REFERENCES
-
-TankLogo is developed by Wei Zhu, Department of Urban Planning, Tongji University, Shanghai, China
-Version-20180925
 @#$#@#$#@
 default
 true
